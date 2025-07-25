@@ -1,15 +1,43 @@
-# delta_critical_simulation
+# Orbital Sustainability Simulations
 
-This repository contains the Python code and numerical simulations used in the paper:
+This repository contains Python code and figures for the simulations presented in the paper *"Sustaining Cooperation in Orbital Commons: A Repeated Game Approach with Finite Punishment"*.
 
-**"Sustaining Cooperation in Orbital Commons: A Repeated Game Approach with Finite Punishment"**
+## Structure
 
-The simulations compute the critical discount factor (δ_crit) required to sustain cooperation in orbital commons, based on detection probability (p) and punishment duration (T).
+- `code/`: Python scripts used to generate simulation results and figures.
+- `figures/`: Output plots used in the paper.
+- `data/`: Simulation results in CSV format.
 
-📄 [Link to the paper on SSRN (to be added)]
+## Simulations
 
-📊 Figures:
-- δ_crit vs. p (for different T)
-- Heatmap of δ_crit as a function of (p, T)
+### Section 4.1 – Extended Simulation
 
-🧠 Keywords: repeated games, orbital sustainability, Folk Theorem, space governance, environmental economics.
+- Script: `code/simulate_country_types_v2.py`
+- Output: `figures/grafico_delta_crit_por_tipo_v2.png`
+
+### Section 4.1 – 3D Visualization of δ_crit
+
+- Script: `code/plot_3d_delta_crit.py`
+- Output: `figures/grafico_3d_delta_crit.png`
+  
+### Section 4.2 – Sensitivity to $U^C_i$
+
+- Script: `code/sensitivity_uc_variation.py`
+- Output: `figures/sensitivity_uc_variation.png`
+  
+### Section 4.3 – Strategic Heterogeneity
+
+- Script: `code/simulate_country_types.py`
+- Output: `figures/grafico_delta_crit_por_tipo.png`
+- Data: `data/delta_crit_simulation_extended.csv`
+
+
+
+
+
+## Requirements
+
+Install dependencies with:
+
+```bash
+pip install -r requirements.txt
